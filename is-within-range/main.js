@@ -1,8 +1,6 @@
 //declare a function named isWithinRange with two parameters
 //first is a number and second is an object
 function isWithinRange(number, rangeObject) {
-  //declare a for loop that iterates through the object using a variable named key
-  for(var key in rangeObject) {
     //declare an if statement that checks if num is with in the min and max properties of the object
     if(number >= rangeObject.min && number <= rangeObject.max) {
       //return true if given number is within range
@@ -11,5 +9,4 @@ function isWithinRange(number, rangeObject) {
       //return false is given number is not in range
       return false;
     }
-  }
 }
