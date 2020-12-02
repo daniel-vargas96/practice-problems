@@ -6,11 +6,13 @@ function selectionSort(arr) {
         min = j;
       }
     }
-    let temp = arr[i];
-    arr[i] = arr[min];
-    arr[min] = temp;
+    if (i !== min) {
+      let temp = arr[i];
+      arr[i] = arr[min];
+      arr[min] = temp;
+    }
   }
   return arr;
 }
 
-console.log(selectionSort([34,22,10,19,17]))
+console.log(selectionSort([34, 22, 10, 19, 17]))
