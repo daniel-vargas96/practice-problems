@@ -5,3 +5,15 @@ function reverse(str) {
 }
 
 // reverse('awesome') // 'emosewa'
+
+function isPalindrome(str) {
+  let reverseWord = reverse(str);
+
+  if (reverseWord === str) {
+    return true;
+  } else return false;
+}
+
+console.log(isPalindrome('awesome'));
+console.log(isPalindrome('racecar'));
+console.log(isPalindrome('anna'));
